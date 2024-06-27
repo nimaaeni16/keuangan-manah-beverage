@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catat Keuangan - Kasir Manah Beverage (Mave)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kasir Manah Beverage (Mave)</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="keuangan.html">Catat Keuangan</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="form">
+        <h2>Transaksi Baru</h2>
+        <form id="keuangan-form">
+          <label for="tanggal">Tanggal:</label>
+          <input type="date" id="tanggal" name="tanggal" required />
+
+          <label for="namaProduk">Nama Produk:</label>
+          <input type="text" id="namaProduk" name="namaProduk" required />
+
+          <label for="harga">Harga:</label>
+          <input type="number" id="harga" name="harga" required />
+
+          <label for="jumlah">Jumlah:</label>
+          <input type="number" id="jumlah" name="jumlah" required />
+
+          <label for="jenis">Jenis:</label>
+          <select id="jenis" name="jenis">
+            <option value="pemasukan">Pemasukan</option>
+            <option value="pengeluaran">Pengeluaran</option>
+          </select>
+          <button type="submit">Catat</button>
+        </form>
+      </section>
+
+      <section id="Riwayat">
+        <h2>Riwayat Transaksi</h2>
+        <table id="tabelRiwayat">
+          <thead>
+            <tr>
+              <th>Tanggal</th>
+              <th>Nama Produk</th>
+              <th>Harga</th>
+              <th>Jumlah</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section id="Laporan">
+        <h2>Laporan Keuangan</h2>
+        <p>Pemasukan: Rp. <span id="pemasukan">0</span></p>
+        <p>Pengeluaran: Rp. <span id="pengeluaran">0</span></p>
+        <p>Saldo: Rp. <span id="saldo">0</span></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Manah Beverage (Mave). All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
