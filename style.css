@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #d08686;
+  color: #141313;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  color: #554f4f;
+  display: inline;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #d08686;
+  color: #141313;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#transaksi,
+#riwayat,
+#laporan {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form select,
+form button {
+  display: block;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
